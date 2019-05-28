@@ -1,0 +1,467 @@
+2019-01-24 10:02:13 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: mySpider)
+2019-01-24 10:02:13 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-01-24 10:02:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mySpider', 'DOWNLOAD_TIMEOUT': 30, 'LOG_FILE': './log.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'mySpider.spiders', 'SPIDER_MODULES': ['mySpider.spiders']}
+2019-01-24 10:02:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-01-24 10:02:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['mySpider.middlewares.RandomUserAgent',
+ 'mySpider.middlewares.JDDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-24 10:02:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-24 10:02:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['mySpider.pipelines.MyspiderPipeline']
+2019-01-24 10:02:14 [scrapy.core.engine] INFO: Spider opened
+2019-01-24 10:02:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-24 10:03:17 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 6 items (at 6 items/min)
+2019-01-24 10:04:19 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 6 pages/min), scraped 12 items (at 6 items/min)
+2019-01-24 10:05:23 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 6 pages/min), scraped 18 items (at 6 items/min)
+2019-01-24 10:06:23 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 6 pages/min), scraped 24 items (at 6 items/min)
+2019-01-24 10:07:16 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 5 pages/min), scraped 29 items (at 5 items/min)
+2019-01-24 10:08:18 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 6 pages/min), scraped 35 items (at 6 items/min)
+2019-01-24 10:09:19 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 6 pages/min), scraped 41 items (at 6 items/min)
+2019-01-24 10:10:20 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 6 pages/min), scraped 47 items (at 6 items/min)
+2019-01-24 10:11:22 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 6 pages/min), scraped 53 items (at 6 items/min)
+2019-01-24 10:12:16 [scrapy.extensions.logstats] INFO: Crawled 58 pages (at 5 pages/min), scraped 58 items (at 5 items/min)
+2019-01-24 10:13:21 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 6 pages/min), scraped 64 items (at 6 items/min)
+2019-01-24 10:14:20 [scrapy.extensions.logstats] INFO: Crawled 70 pages (at 6 pages/min), scraped 70 items (at 6 items/min)
+2019-01-24 10:15:19 [scrapy.extensions.logstats] INFO: Crawled 76 pages (at 6 pages/min), scraped 76 items (at 6 items/min)
+2019-01-24 10:16:21 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 6 pages/min), scraped 82 items (at 6 items/min)
+2019-01-24 10:17:32 [scrapy.extensions.logstats] INFO: Crawled 86 pages (at 4 pages/min), scraped 86 items (at 4 items/min)
+2019-01-24 10:18:24 [scrapy.extensions.logstats] INFO: Crawled 89 pages (at 3 pages/min), scraped 89 items (at 3 items/min)
+2019-01-24 10:19:14 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 6 pages/min), scraped 94 items (at 5 items/min)
+2019-01-24 10:20:24 [scrapy.extensions.logstats] INFO: Crawled 101 pages (at 6 pages/min), scraped 101 items (at 7 items/min)
+2019-01-24 10:21:23 [scrapy.extensions.logstats] INFO: Crawled 107 pages (at 6 pages/min), scraped 107 items (at 6 items/min)
+2019-01-24 10:22:19 [scrapy.extensions.logstats] INFO: Crawled 112 pages (at 5 pages/min), scraped 112 items (at 5 items/min)
+2019-01-24 10:23:14 [scrapy.extensions.logstats] INFO: Crawled 118 pages (at 6 pages/min), scraped 118 items (at 6 items/min)
+2019-01-24 10:24:16 [scrapy.extensions.logstats] INFO: Crawled 125 pages (at 7 pages/min), scraped 125 items (at 7 items/min)
+2019-01-24 10:24:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-01-24 10:24:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 64903,
+ 'downloader/request_count': 126,
+ 'downloader/request_method_count/GET': 126,
+ 'downloader/response_bytes': 3472035,
+ 'downloader/response_count': 126,
+ 'downloader/response_status_count/200': 126,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 24, 2, 24, 25, 321098),
+ 'item_scraped_count': 126,
+ 'log_count/INFO': 29,
+ 'memusage/max': 123236352,
+ 'memusage/startup': 89661440,
+ 'request_depth_max': 126,
+ 'response_received_count': 126,
+ 'scheduler/dequeued': 126,
+ 'scheduler/dequeued/memory': 126,
+ 'scheduler/enqueued': 126,
+ 'scheduler/enqueued/memory': 126,
+ 'start_time': datetime.datetime(2019, 1, 24, 2, 2, 14, 991605)}
+2019-01-24 10:24:25 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-01-24 10:46:16 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: mySpider)
+2019-01-24 10:46:16 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-01-24 10:46:16 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mySpider', 'DOWNLOAD_TIMEOUT': 120, 'LOG_FILE': './log.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'mySpider.spiders', 'REDIRECT_MAX_TIMES': 500, 'SPIDER_MODULES': ['mySpider.spiders']}
+2019-01-24 10:46:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-01-24 10:46:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['mySpider.middlewares.RandomUserAgent',
+ 'mySpider.middlewares.JDDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-24 10:46:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-24 10:46:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['mySpider.pipelines.MyspiderPipeline']
+2019-01-24 10:46:18 [scrapy.core.engine] INFO: Spider opened
+2019-01-24 10:46:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-24 10:47:18 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 6 items (at 6 items/min)
+2019-01-24 10:48:19 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 6 pages/min), scraped 12 items (at 6 items/min)
+2019-01-24 10:49:20 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 6 pages/min), scraped 18 items (at 6 items/min)
+2019-01-24 10:50:18 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 6 pages/min), scraped 24 items (at 6 items/min)
+2019-01-24 10:51:19 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 6 pages/min), scraped 30 items (at 6 items/min)
+2019-01-24 10:52:21 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 6 pages/min), scraped 36 items (at 6 items/min)
+2019-01-24 10:53:25 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 6 pages/min), scraped 42 items (at 6 items/min)
+2019-01-24 10:54:19 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 5 pages/min), scraped 47 items (at 5 items/min)
+2019-01-24 10:55:24 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 6 pages/min), scraped 53 items (at 6 items/min)
+2019-01-24 10:56:24 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 6 pages/min), scraped 59 items (at 6 items/min)
+2019-01-24 10:57:18 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 5 pages/min), scraped 64 items (at 5 items/min)
+2019-01-24 10:58:22 [scrapy.extensions.logstats] INFO: Crawled 70 pages (at 6 pages/min), scraped 70 items (at 6 items/min)
+2019-01-24 10:59:23 [scrapy.extensions.logstats] INFO: Crawled 76 pages (at 6 pages/min), scraped 76 items (at 6 items/min)
+2019-01-24 11:00:21 [scrapy.extensions.logstats] INFO: Crawled 82 pages (at 6 pages/min), scraped 82 items (at 6 items/min)
+2019-01-24 11:01:09 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-01-24 11:01:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 44559,
+ 'downloader/request_count': 87,
+ 'downloader/request_method_count/GET': 87,
+ 'downloader/response_bytes': 2133012,
+ 'downloader/response_count': 87,
+ 'downloader/response_status_count/200': 87,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 24, 3, 1, 9, 176193),
+ 'item_scraped_count': 87,
+ 'log_count/INFO': 21,
+ 'memusage/max': 123326464,
+ 'memusage/startup': 89612288,
+ 'request_depth_max': 86,
+ 'response_received_count': 87,
+ 'scheduler/dequeued': 87,
+ 'scheduler/dequeued/memory': 87,
+ 'scheduler/enqueued': 87,
+ 'scheduler/enqueued/memory': 87,
+ 'start_time': datetime.datetime(2019, 1, 24, 2, 46, 18, 34497)}
+2019-01-24 11:01:09 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-01-24 11:05:18 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: mySpider)
+2019-01-24 11:05:18 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-01-24 11:05:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mySpider', 'DOWNLOAD_TIMEOUT': 120, 'LOG_FILE': './log.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'mySpider.spiders', 'REDIRECT_MAX_TIMES': 500, 'SPIDER_MODULES': ['mySpider.spiders']}
+2019-01-24 11:05:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-01-24 11:05:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['mySpider.middlewares.RandomUserAgent',
+ 'mySpider.middlewares.JDDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-24 11:05:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-24 11:05:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['mySpider.pipelines.MyspiderPipeline']
+2019-01-24 11:05:19 [scrapy.core.engine] INFO: Spider opened
+2019-01-24 11:05:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-24 11:05:56 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-01-24 11:05:57 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-01-24 11:07:34 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: mySpider)
+2019-01-24 11:07:34 [scrapy.utils.log] INFO: Versions: lxml 4.3.0.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.3 (v3.6.3:2c5fed86e0, Oct  3 2017, 00:32:08) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-01-24 11:07:34 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mySpider', 'DOWNLOAD_TIMEOUT': 120, 'LOG_FILE': './log.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'mySpider.spiders', 'REDIRECT_MAX_TIMES': 500, 'SPIDER_MODULES': ['mySpider.spiders']}
+2019-01-24 11:07:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-01-24 11:07:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['mySpider.middlewares.RandomUserAgent',
+ 'mySpider.middlewares.JDDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-24 11:07:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-24 11:07:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['mySpider.pipelines.MyspiderPipeline']
+2019-01-24 11:07:35 [scrapy.core.engine] INFO: Spider opened
+2019-01-24 11:07:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-24 11:08:41 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 5 items (at 5 items/min)
+2019-01-24 11:09:43 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 5 pages/min), scraped 10 items (at 5 items/min)
+2019-01-24 11:10:42 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 5 pages/min), scraped 15 items (at 5 items/min)
+2019-01-24 11:11:41 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 5 pages/min), scraped 20 items (at 5 items/min)
+2019-01-24 11:12:42 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 5 pages/min), scraped 25 items (at 5 items/min)
+2019-01-24 11:13:43 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 5 pages/min), scraped 30 items (at 5 items/min)
+2019-01-24 11:14:35 [scrapy.extensions.logstats] INFO: Crawled 35 pages (at 4 pages/min), scraped 34 items (at 4 items/min)
+2019-01-24 11:15:36 [scrapy.extensions.logstats] INFO: Crawled 40 pages (at 5 pages/min), scraped 39 items (at 5 items/min)
+2019-01-24 11:16:42 [scrapy.extensions.logstats] INFO: Crawled 45 pages (at 5 pages/min), scraped 44 items (at 5 items/min)
+2019-01-24 11:17:42 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 5 pages/min), scraped 49 items (at 5 items/min)
+2019-01-24 11:18:44 [scrapy.extensions.logstats] INFO: Crawled 55 pages (at 5 pages/min), scraped 54 items (at 5 items/min)
+2019-01-24 11:19:36 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 4 pages/min), scraped 58 items (at 4 items/min)
+2019-01-24 11:20:40 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 5 pages/min), scraped 63 items (at 5 items/min)
+2019-01-24 11:21:41 [scrapy.extensions.logstats] INFO: Crawled 69 pages (at 5 pages/min), scraped 68 items (at 5 items/min)
+2019-01-24 11:22:39 [scrapy.extensions.logstats] INFO: Crawled 74 pages (at 5 pages/min), scraped 73 items (at 5 items/min)
+2019-01-24 11:23:36 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 4 pages/min), scraped 77 items (at 4 items/min)
+2019-01-24 11:24:39 [scrapy.extensions.logstats] INFO: Crawled 83 pages (at 5 pages/min), scraped 82 items (at 5 items/min)
+2019-01-24 11:25:42 [scrapy.extensions.logstats] INFO: Crawled 88 pages (at 5 pages/min), scraped 87 items (at 5 items/min)
+2019-01-24 11:26:36 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 4 pages/min), scraped 91 items (at 4 items/min)
+2019-01-24 11:27:37 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 5 pages/min), scraped 96 items (at 5 items/min)
+2019-01-24 11:28:44 [scrapy.extensions.logstats] INFO: Crawled 102 pages (at 5 pages/min), scraped 101 items (at 5 items/min)
+2019-01-24 11:29:36 [scrapy.extensions.logstats] INFO: Crawled 106 pages (at 4 pages/min), scraped 105 items (at 4 items/min)
+2019-01-24 11:30:37 [scrapy.extensions.logstats] INFO: Crawled 111 pages (at 5 pages/min), scraped 110 items (at 5 items/min)
+2019-01-24 11:31:44 [scrapy.extensions.logstats] INFO: Crawled 116 pages (at 5 pages/min), scraped 115 items (at 5 items/min)
+2019-01-24 11:32:35 [scrapy.extensions.logstats] INFO: Crawled 120 pages (at 4 pages/min), scraped 119 items (at 4 items/min)
+2019-01-24 11:33:37 [scrapy.extensions.logstats] INFO: Crawled 125 pages (at 5 pages/min), scraped 124 items (at 5 items/min)
+2019-01-24 11:34:35 [scrapy.extensions.logstats] INFO: Crawled 129 pages (at 4 pages/min), scraped 128 items (at 4 items/min)
+2019-01-24 11:35:37 [scrapy.extensions.logstats] INFO: Crawled 134 pages (at 5 pages/min), scraped 133 items (at 5 items/min)
+2019-01-24 11:36:40 [scrapy.extensions.logstats] INFO: Crawled 139 pages (at 5 pages/min), scraped 138 items (at 5 items/min)
+2019-01-24 11:37:43 [scrapy.extensions.logstats] INFO: Crawled 144 pages (at 5 pages/min), scraped 143 items (at 5 items/min)
+2019-01-24 11:38:35 [scrapy.extensions.logstats] INFO: Crawled 148 pages (at 4 pages/min), scraped 147 items (at 4 items/min)
+2019-01-24 11:39:46 [scrapy.extensions.logstats] INFO: Crawled 153 pages (at 5 pages/min), scraped 152 items (at 5 items/min)
+2019-01-24 11:40:37 [scrapy.extensions.logstats] INFO: Crawled 157 pages (at 4 pages/min), scraped 156 items (at 4 items/min)
+2019-01-24 11:41:38 [scrapy.extensions.logstats] INFO: Crawled 162 pages (at 5 pages/min), scraped 161 items (at 5 items/min)
+2019-01-24 11:42:39 [scrapy.extensions.logstats] INFO: Crawled 167 pages (at 5 pages/min), scraped 166 items (at 5 items/min)
+2019-01-24 11:43:41 [scrapy.extensions.logstats] INFO: Crawled 172 pages (at 5 pages/min), scraped 171 items (at 5 items/min)
+2019-01-24 11:44:42 [scrapy.extensions.logstats] INFO: Crawled 177 pages (at 5 pages/min), scraped 176 items (at 5 items/min)
+2019-01-24 11:45:36 [scrapy.extensions.logstats] INFO: Crawled 181 pages (at 4 pages/min), scraped 180 items (at 4 items/min)
+2019-01-24 11:46:40 [scrapy.extensions.logstats] INFO: Crawled 186 pages (at 5 pages/min), scraped 185 items (at 5 items/min)
+2019-01-24 11:47:47 [scrapy.extensions.logstats] INFO: Crawled 191 pages (at 5 pages/min), scraped 190 items (at 5 items/min)
+2019-01-24 11:48:38 [scrapy.extensions.logstats] INFO: Crawled 195 pages (at 4 pages/min), scraped 194 items (at 4 items/min)
+2019-01-24 11:49:43 [scrapy.extensions.logstats] INFO: Crawled 200 pages (at 5 pages/min), scraped 199 items (at 5 items/min)
+2019-01-24 11:50:42 [scrapy.extensions.logstats] INFO: Crawled 205 pages (at 5 pages/min), scraped 204 items (at 5 items/min)
+2019-01-24 11:51:35 [scrapy.extensions.logstats] INFO: Crawled 209 pages (at 4 pages/min), scraped 208 items (at 4 items/min)
+2019-01-24 11:52:44 [scrapy.extensions.logstats] INFO: Crawled 215 pages (at 6 pages/min), scraped 214 items (at 6 items/min)
+2019-01-24 11:53:42 [scrapy.extensions.logstats] INFO: Crawled 220 pages (at 5 pages/min), scraped 219 items (at 5 items/min)
+2019-01-24 11:54:44 [scrapy.extensions.logstats] INFO: Crawled 225 pages (at 5 pages/min), scraped 224 items (at 5 items/min)
+2019-01-24 11:55:37 [scrapy.extensions.logstats] INFO: Crawled 229 pages (at 4 pages/min), scraped 228 items (at 4 items/min)
+2019-01-24 11:56:38 [scrapy.extensions.logstats] INFO: Crawled 233 pages (at 4 pages/min), scraped 232 items (at 4 items/min)
+2019-01-24 11:57:46 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 4 pages/min), scraped 236 items (at 4 items/min)
+2019-01-24 11:58:41 [scrapy.extensions.logstats] INFO: Crawled 240 pages (at 3 pages/min), scraped 240 items (at 4 items/min)
+2019-01-24 11:59:35 [scrapy.extensions.logstats] INFO: Crawled 245 pages (at 5 pages/min), scraped 244 items (at 4 items/min)
+2019-01-24 12:00:36 [scrapy.extensions.logstats] INFO: Crawled 248 pages (at 3 pages/min), scraped 248 items (at 4 items/min)
+2019-01-24 12:01:37 [scrapy.extensions.logstats] INFO: Crawled 253 pages (at 5 pages/min), scraped 252 items (at 4 items/min)
+2019-01-24 12:02:36 [scrapy.extensions.logstats] INFO: Crawled 256 pages (at 3 pages/min), scraped 256 items (at 4 items/min)
+2019-01-24 12:03:44 [scrapy.extensions.logstats] INFO: Crawled 262 pages (at 6 pages/min), scraped 261 items (at 5 items/min)
+2019-01-24 12:04:42 [scrapy.extensions.logstats] INFO: Crawled 265 pages (at 3 pages/min), scraped 265 items (at 4 items/min)
+2019-01-24 12:05:35 [scrapy.extensions.logstats] INFO: Crawled 270 pages (at 5 pages/min), scraped 269 items (at 4 items/min)
+2019-01-24 12:06:37 [scrapy.extensions.logstats] INFO: Crawled 275 pages (at 5 pages/min), scraped 274 items (at 5 items/min)
+2019-01-24 12:07:37 [scrapy.extensions.logstats] INFO: Crawled 280 pages (at 5 pages/min), scraped 279 items (at 5 items/min)
+2019-01-24 12:08:41 [scrapy.extensions.logstats] INFO: Crawled 285 pages (at 5 pages/min), scraped 284 items (at 5 items/min)
+2019-01-24 12:09:37 [scrapy.extensions.logstats] INFO: Crawled 289 pages (at 4 pages/min), scraped 288 items (at 4 items/min)
+2019-01-24 12:10:42 [scrapy.extensions.logstats] INFO: Crawled 294 pages (at 5 pages/min), scraped 293 items (at 5 items/min)
+2019-01-24 12:11:39 [scrapy.extensions.logstats] INFO: Crawled 298 pages (at 4 pages/min), scraped 297 items (at 4 items/min)
+2019-01-24 12:12:44 [scrapy.extensions.logstats] INFO: Crawled 303 pages (at 5 pages/min), scraped 302 items (at 5 items/min)
+2019-01-24 12:13:35 [scrapy.extensions.logstats] INFO: Crawled 307 pages (at 4 pages/min), scraped 306 items (at 4 items/min)
+2019-01-24 12:14:31 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['森麥康 华为Mate10手机摄像头镜片 Mate 10 pro镜头盖后照相玻璃镜面照相头镜片 Mate 10纯玻璃镜面2片', '森麥康 华为Mate10手机摄像头镜片 Mate 10 pro镜头盖后照相玻璃镜面照相头镜片 Mate 10pro纯玻璃镜面1片', '森麥康 华为Mate10手机摄像头镜片 Mate 10 pro镜头盖后照相玻璃镜面照相头镜片 Mate 10pro纯玻璃镜面2片', '森麥康 华为荣耀9青春版摄像头镜片 LLD-AL10后置照相机玻璃镜面 镜头盖 荣耀9青春版玻璃镜片1个', '森麥康 华为荣耀9青春版摄像头镜片 LLD-AL10后置照相机玻璃镜面 镜头盖 荣耀9青春版玻璃镜片2个', '森麥康 华为荣耀9青春版摄像头镜片 LLD-AL10后置照相机玻璃镜面 镜头盖 荣耀9青春版原机玻璃镜片1个', '森麥康 华为荣耀9青春版摄像头镜片 LLD-AL10后置照相机玻璃镜面 镜头盖 荣耀9青春版原机玻璃镜片2个', '森麥康 适用华为 p8max 后置摄像头镜片 P8MAX照相机镜面 玻璃镜片镜头盖 P8max玻璃镜片1个', '森麥康 适用华为 p8max 后置摄像头镜片 P8MAX照相机镜面 玻璃镜片镜头盖 P8max玻璃镜片2个', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅玩7C玻璃镜面1片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅玩7C玻璃镜面2片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅玩7C原机玻璃镜面2片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅享8玻璃镜面1片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅享8玻璃镜面2片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅享8原机玻璃镜面1片', '森麥康 华为荣耀畅玩7C 畅享8 摄像头镜片 后置玻璃镜面 镜头盖照相头镜片保护手机摄像头玻璃镜片 畅享8原机玻璃镜面2片', '森麥康 步步高vivoX21摄像头镜片x21a后置照相机x21ud玻璃镜头盖 X21i保护摄像头镜片 X21/x21i普通玻璃镜面1片', '森麥康 步步高vivoX21摄像头镜片x21a后置照相机x21ud玻璃镜头盖 X21i保护摄像头镜片 X21/x21i原机玻璃镜面1片', '森麥康 步步高vivoX21摄像头镜片x21a后置照相机x21ud玻璃镜头盖 X21i保护摄像头镜片 X21/x21i原机纯玻璃镜面2片', '森麥康 小米5X手机摄像头玻璃镜片 小米5X镜头盖 mde2后置照相玻璃镜面照相头镜片钢化膜 小米5X玻璃镜面1片', '森麥康 小米5X手机摄像头玻璃镜片 小米5X镜头盖 mde2后置照相玻璃镜面照相头镜片钢化膜 小米5X玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通金色玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通金色玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机金色玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机金色玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通银色玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通银色玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机银色玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机银色玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通玫瑰金玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus普通玫瑰金玻璃镜面2片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机玫瑰金玻璃镜面1片', '森麥康 华为麦芒5摄像头玻璃镜片G9plus后置照相镜面MLA-AL10镜头盖保护手机摄像头镜片 麦芒5/G9lus原机玫瑰金玻璃镜面2片', '森麥康 华为畅享8 摄像头镜片 LDN-AL00/AL20后置照相机玻璃镜面镜头盖照相头镜片钢化膜 畅享8玻璃镜面1片', '森麥康 华为畅享8 摄像头镜片 LDN-AL00/AL20后置照相机玻璃镜面镜头盖照相头镜片钢化膜 畅享8玻璃镜面2片', '森麥康 华为畅享8 摄像头镜片 LDN-AL00/AL20后置照相机玻璃镜面镜头盖照相头镜片钢化膜 畅享8原机玻璃镜面1片', '森麥康 华为畅享8 摄像头镜片 LDN-AL00/AL20后置照相机玻璃镜面镜头盖照相头镜片钢化膜 畅享8原机玻璃镜面2片', '森麥康 三星Note8 N9500后摄像头镜片 N9550镜头盖 N950U/F玻璃镜面镜框保护相头 Note8普通玻璃镜面1片', '森麥康 三星Note8 N9500后摄像头镜片 N9550镜头盖 N950U/F玻璃镜面镜框保护相头 Note8普通玻璃镜面2片', '森麥康 三星Note8 N9500后摄像头镜片 N9550镜头盖 N950U/F玻璃镜面镜框保护相头 Note8原机玻璃镜面2片', '森麥康 步步高vivo Xplay5摄像头镜片 Xplay5A镜头盖 后置照相玻璃镜面 Xplay5原机玻璃镜面1片', '森麥康 步步高vivo Xplay5摄像头镜片 Xplay5A镜头盖 后置照相玻璃镜面 Xplay5原机玻璃镜面2片', '森麥康 小米6X摄像头镜片 小米6X手机后置照相机玻璃镜面 小米6X镜头盖保护手机摄像头镜片 小米6X玻璃镜面2片', '森麥康 小米6X摄像头镜片 小米6X手机后置照相机玻璃镜面 小米6X镜头盖保护手机摄像头镜片 小米6X原机玻璃镜面2片', '森麥康 华为荣耀V9play手机摄像头镜片 V9play镜头盖 后置照相玻璃镜面保护摄像头镜片 V9play普通玻璃镜面1片', '森麥康 华为荣耀V9play手机摄像头镜片 V9play镜头盖 后置照相玻璃镜面保护摄像头镜片 V9play普通玻璃镜面2片', '森麥康 华为荣耀V9play手机摄像头镜片 V9play镜头盖 后置照相玻璃镜面保护摄像头镜片 V9play原机玻璃镜面1片', '森麥康 华为荣耀V9play手机摄像头镜片 V9play镜头盖 后置照相玻璃镜面保护摄像头镜片 V9play原机玻璃镜面2片', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X原机玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X原机玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X金色镜框+1个镜片', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X蓝色镜框+1个镜片', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7X黑色镜框+1个镜片', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7C玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7C玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7C原机玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩7C原机玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X金色玻璃镜片1个'], 'type_info': '手机通讯--手机配件--拍照配件'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 691, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 699, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 60] Operation timed out)')
+2019-01-24 12:14:36 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【土豪金】单壳不要 苹果7plus/8p(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【土豪金】单壳不要 苹果X(5.8寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【玫瑰金】单壳不要 苹果7/8(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【气质银】单壳不要 苹果6/6s(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【气质银】单壳不要 苹果6plus/6sp(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【气质银】单壳不要 苹果7/8(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【气质银】单壳不要 苹果X(5.8寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【宝石蓝】单壳不要 苹果6plus/6sp(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 【宝石蓝】单壳不要 苹果7plus/8p(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 钢化膜+运输破碎请当天找客服补发 苹果6/6s(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 钢化膜+运输破碎请当天找客服补发 苹果6plus/6sp(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/7plus苹果x透明软壳8p全包防摔硅胶男女 钢化膜+运输破碎请当天找客服补发 苹果7plus/8p(5.5寸)', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+挂绳 VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+挂绳 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+挂绳 oppo r11s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+挂绳 oppo r15梦境版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 oppo R9S', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+挂绳 OPPO R15标准版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 苹果7/8通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 7plus/8plus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+挂绳 oppo r15梦境版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 VIVO X9/X9s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 oppo R9S', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 oppo r11s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 白色+全屏钢化膜+数据线 oppo r15梦境版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 苹果7/8通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 7plus/8plus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 VIVO X9/X9s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 黑色+全屏钢化膜+数据线 oppo r11s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 苹果7/8通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 7plus/8plus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 VIVO X9/X9s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 oppo R9S', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 oppo r11s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 OPPO R15标准版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 红色+全屏钢化膜+数据线 oppo r15梦境版'], 'type_info': '手机通讯--手机配件--手机饰品'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:14:36 [scrapy.extensions.logstats] INFO: Crawled 310 pages (at 3 pages/min), scraped 308 items (at 2 items/min)
+2019-01-24 12:15:04 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) 苹果7/8通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) 苹果X', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) VIVO X9/X9s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) oppo r11s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳(裸壳) oppo r15梦境版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 苹果6/6S通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 6plus/6splus通用5.5寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 苹果7/8通用4.7寸', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 VIVO X9/X9s', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 VIVO x20', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 VIVO X21后置指纹版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 oppo R9S', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 oppo R11', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 OPPO R15标准版', '【新品★特价】苹果6/6s/7/8/oppor9s/r11/r11s/plus/手机壳全包vivox 爱心玻璃壳+全屏钢化膜+数据线 oppo r15梦境版', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 美人鱼+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 美人鱼+送同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 美人鱼+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 尚美钢壳   苹果6/6S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 捂眼女孩+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 尚美钢壳   苹果6/6S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 蒲公英+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 白发男神+送同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 白发男神+送同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 白发男神+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 白发男神+送同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 白发男神+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 尚美钢壳   苹果6/6S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 史迪仔+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 尚美钢壳   苹果6/6S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 珍惜+送同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 天鹅湖+送同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 天鹅湖+送同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 天鹅湖+送同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 天鹅湖+送同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 国色天香+同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 国色天香+同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 国色天香+同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 尚美钢壳   苹果5/5S/5SE'], 'type_info': '手机通讯--手机配件--手机饰品'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:07 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X金色玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X银色玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X银色玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X灰色玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X灰色玻璃镜片2个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X粉色玻璃镜片1个', '森麥康 华为荣耀畅玩6 6A 6X 7X 7C摄像头镜片 后置照相机玻璃镜面镜头盖保护手机摄像头镜片 畅玩6X粉色玻璃镜片2个', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加5玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加5玻璃镜面2片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加5原机玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加5原机玻璃镜面2片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加3/3T玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加3/3T玻璃镜面2片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加3/3T原机玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T 一加3T摄像头镜片 A5000后置照相机玻璃镜面镜头盖 一加3/3T原机玻璃镜面2片', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4玻璃镜片1个', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4玻璃镜片2个', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4原机玻璃镜片1个', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4原机玻璃镜片2个', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4黑色镜框+1个原机镜片', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4白色镜框+1个镜片', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4金色镜框+1个镜片', '森麥康 三星note4后摄像头镜面N9100 N9108V镜片N9109W N9106W玻璃镜头盖 Note4粉色镜框+1个镜片', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6大镜片1片(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6大镜片2片(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6大镜片2片(原机玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6小镜片1片(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6小镜片2片(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 Note6小镜片2片(原机玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 魅蓝6镜片1个(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 魅蓝6镜片2个(普通玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 魅蓝6镜片1个(原机玻璃)', '森麥康 魅族 魅蓝Note6 魅蓝M6摄像头镜片m6note镜头盖后置照相玻璃镜面手机保护摄像头镜片 魅蓝6镜片2个(原机玻璃)', '森麥康 美图M8 M8S T8 T8S手机后置摄像头镜面 镜头片照相玻璃镜头盖 T8/T8S普通玻璃镜面1片', '森麥康 美图M8 M8S T8 T8S手机后置摄像头镜面 镜头片照相玻璃镜头盖 T8/T8S普通玻璃镜面2片', '森麥康 美图M8 M8S T8 T8S手机后置摄像头镜面 镜头片照相玻璃镜头盖 M8/M8S原机玻璃镜面1片', '森麥康 美图M8 M8S T8 T8S手机后置摄像头镜面 镜头片照相玻璃镜头盖 M8/M8S原机玻璃镜面2片', '森麥康 华为荣耀7i手机摄像头镜片ATH-AL00荣耀7i镜头盖 荣耀7i后置照相玻璃镜面保护摄像头 荣耀7i 普通玻璃镜面1片', '森麥康 华为荣耀7i手机摄像头镜片ATH-AL00荣耀7i镜头盖 荣耀7i后置照相玻璃镜面保护摄像头 荣耀7i 普通玻璃镜面2片', '森麥康 华为荣耀7i手机摄像头镜片ATH-AL00荣耀7i镜头盖 荣耀7i后置照相玻璃镜面保护摄像头 荣耀7i 原机玻璃镜面1片', '森麥康 华为荣耀7i手机摄像头镜片ATH-AL00荣耀7i镜头盖 荣耀7i后置照相玻璃镜面保护摄像头 荣耀7i 原机玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20原机玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20原机玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro大玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro大玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro原机大玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro小玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro小玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro原机小玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20pro原机小玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20青春版玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20青春版玻璃镜面2片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20青春版原机玻璃镜面1片', '森麥康 华为P20 P20pro后摄像头镜片 P20青春版照相机玻璃镜面镜头盖保护摄像头镜片 P20青春版原机玻璃镜面2片', '森麥康 OPPO A77手机摄像头镜片 OPPO A77镜头盖A77后置照相玻璃镜面照相头镜片钢化膜 A77玻璃镜面1片', '森麥康 OPPO A77手机摄像头镜片 OPPO A77镜头盖A77后置照相玻璃镜面照相头镜片钢化膜 A77玻璃镜面2片', '森麥康 OPPO A77手机摄像头镜片 OPPO A77镜头盖A77后置照相玻璃镜面照相头镜片钢化膜 A77粉色镜框+镜片', '森麥康 OPPO A77手机摄像头镜片 OPPO A77镜头盖A77后置照相玻璃镜面照相头镜片钢化膜 A77银色镜框+镜片'], 'type_info': '手机通讯--手机配件--拍照配件'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:14 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 尚美钢壳   苹果6/6S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 尚美钢壳 苹果7PLUS/8P', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 自然嗨+同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 念念不忘+同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 念念不忘+同款指环 尚美钢壳 苹果7/8', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 念念不忘+同款指环 钢壳 苹果4/4S', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 念念不忘+同款指环 钢壳 苹果X/8X', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 紫色花+同款指环 尚美钢壳   苹果5/5S/5SE', '【新品★特价】苹果5s手机壳SE卡通4s硅胶套6/6S/7/8x/6plus保护套7plus送钢化膜 紫色花+同款指环 尚美钢壳 苹果6PLUS/6SP', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果6/6s(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果6P/6SP(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果8(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果8plus(5.5寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果X(5.8寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-石墨黑】(单壳) 苹果5/5S(4寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-宝石蓝】(单壳) 苹果6/6s(4.7寸)', '【新品★特价】苹果6手机壳iphone6s/7/8/x硅胶六套全包5男女款plus防摔软壳 磨砂【镂空款-宝石蓝】(单壳) 苹果6P/6SP(5.5寸)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 oppo r9s', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 oppo r11s(后指纹孔)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰先生 oppo r11splus(后指纹孔', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 苹果6p/6sp  5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 苹果7/8   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 oppo r9s', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 oppo r9splus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 oppo r11s(后指纹孔)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 猫头鹰小姐 oppo r11splus(后指纹孔', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 苹果6p/6sp  5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 苹果7/8   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 oppo r9plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 oppo r11plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黑底猫头鹰 oppo r11s(后指纹孔)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 苹果7/8   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 oppo r9s', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 oppo r9splus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 oppo r11plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 粉色猫狗 oppo r11splus(后指纹孔', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 苹果6p/6sp  5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 oppo r9plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 oppo r11', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 oppo r11s(后指纹孔)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红色小熊 oppo r11splus(后指纹孔', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 苹果6/6s   4.7寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 苹果7/8   4.7寸'], 'type_info': '手机通讯--手机配件--手机饰品'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:17 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['森麥康 OPPO A77手机摄像头镜片 OPPO A77镜头盖A77后置照相玻璃镜面照相头镜片钢化膜 A77灰色镜框+镜片', '森麥康 华为荣耀 V9手机摄像头镜片镜头盖 DUK-AL20后置照相玻璃镜面保护手机摄像头镜片 荣耀V9玻璃镜面1片', '森麥康 华为荣耀 V9手机摄像头镜片镜头盖 DUK-AL20后置照相玻璃镜面保护手机摄像头镜片 荣耀V9玻璃镜面2片', '森麥康 华为荣耀 V9手机摄像头镜片镜头盖 DUK-AL20后置照相玻璃镜面保护手机摄像头镜片 荣耀V9原机玻璃镜面2片', '森麥康 华为Nova3e摄像头镜片nova3后置照相机玻璃镜面 华为ANE-AL10镜头盖 nova3e玻璃镜面1片', '森麥康 华为Nova3e摄像头镜片nova3后置照相机玻璃镜面 华为ANE-AL10镜头盖 nova3e玻璃镜面2片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X普通玻璃镜面1片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X普通玻璃镜面2片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X蓝宝石镜面1片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X蓝宝石镜面2片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X白色镜框+蓝宝石镜片', '森麥康 苹果X 后置摄像头玻璃镜面 iphone X蓝宝石镜片 8X镜头盖镜框照相头镜片摄像头钢化膜 苹果X黑色镜框+蓝宝石镜片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6/A/D/L玻璃镜面1片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6/A/D/L玻璃镜面2片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6/A/D/L土豪金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6/A/D/L玫瑰金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6plus玻璃镜面1片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6plus玻璃镜面2片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6plus土豪金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6plus玫瑰金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6s/sa玻璃镜面1片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6s/sa玻璃镜面2片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6s/sa土豪金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6s/sa玫瑰金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6Splus玻璃镜面1片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6Splus玻璃镜面2片', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6Splus土豪金镜框+镜面', '森麥康 步步高VIVO X6 x6S A D L sa X6plus摄像头玻璃镜片后照相机镜面镜头盖 X6Splus玫瑰金镜框+镜面', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5C玻璃镜面1片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5C玻璃镜面2片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5C原机玻璃镜面1片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5C原机玻璃镜面2片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5X玻璃镜面2片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5X原机玻璃镜面1片', '森麥康 华为荣耀畅玩5X 荣耀畅玩5C手机摄像头镜片荣耀5x镜头盖荣耀5c后置照相机玻璃镜面 荣耀5X原机玻璃镜面2片', '森麥康 小米5X手机摄像头玻璃镜片 小米5X镜头盖 mde2后置照相玻璃镜面照相头镜片钢化膜 小米5X黑色镜框+镜片【一套】', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S普通玻璃镜面1片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S普通玻璃镜面2片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2s原机玻璃镜面1片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S原机玻璃镜面2片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S樱粉金镜框+1个镜片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S曜石黑镜框+1个镜片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S银钻灰镜框+1个镜片', '森麥康 华为Nova 2s摄像头镜片 HWI-AL00后置照相机玻璃镜面 镜头盖镜框 Nova 2S浅艾蓝镜框+1个镜片', '森麥康 OnePlus 一加5 一加5T后摄像头玻璃镜面 A5000照相机镜头盖 镜片镜框 一加5玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T后摄像头玻璃镜面 A5000照相机镜头盖 镜片镜框 一加5玻璃镜面2片', '森麥康 OnePlus 一加5 一加5T后摄像头玻璃镜面 A5000照相机镜头盖 镜片镜框 一加5高清玻璃镜面1片', '森麥康 OnePlus 一加5 一加5T后摄像头玻璃镜面 A5000照相机镜头盖 镜片镜框 一加5高清玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20纯玻璃镜面1片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20纯玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20原机玻璃镜面1片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20原机玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20黑色镜框+镜片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus纯玻璃镜面1片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus纯玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus原机玻璃镜面1片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus原机玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus黑色镜框+镜面', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X20plus金色镜框+镜面', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X21/x21i纯玻璃镜面1片'], 'type_info': '手机通讯--手机配件--拍照配件'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:23 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r9s', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r9splus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r11', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r11plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 黄色小熊 oppo r11s(后指纹孔)', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO 苹果6p/6sp  5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO 苹果7p/8p 5.5寸', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO oppo r9', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO oppo r9plus', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO oppo r9s', '【新品★特价】oppor11splus手机壳r9splus苹果6sp手机壳浮雕iphone7/8x硅 红底NEO oppo r9splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜+指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜+指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送防爆膜+指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送防爆膜+指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜+指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜+指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜+指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜+指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜+指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送防爆膜+指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送防爆膜+指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送防爆膜+指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送指环+挂绳】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送指环+挂绳】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送指环+挂绳】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送指环+挂绳】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光蓝【送防爆膜】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送防爆膜】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光绿【送防爆膜】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光紫【送防爆膜】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光粉【送防爆膜】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送防爆膜】 iPhone7/7s'], 'type_info': '手机通讯--手机配件--手机饰品'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:27 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X21/x21i纯玻璃镜面2片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X21/x21i原机玻璃镜面1片', '森麥康 步步高ViVO X20 x21i X21 X20plus摄像头镜片镜头盖后照相玻璃镜面镜框 X21/x21i原机玻璃镜面2片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝M1玻璃镜面1片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝M1玻璃镜面2片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 M1 Metal 玻璃镜面1片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 M1 Metal 玻璃镜面2片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝M2玻璃镜面1片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝M2玻璃镜面2片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝Note玻璃镜面1片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝Note玻璃镜面2片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝Note2玻璃镜面1片', '森麥康 魅族/魅蓝M1 Metal M2 Note2手机摄像头镜片镜头盖后照相玻璃镜面 魅蓝Note2玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9/X9i/X9S玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9/X9i/X9S玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9/X9i/X9S原机玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9/X9i/X9S原机玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9/X9i/X9S镜框+镜片【一套】', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9plus玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9plus玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9plus原机玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9plus原机玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9plus镜框+镜片【一套】', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9Splus玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9Splus原机玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X9Splus镜框+镜片【一套】', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X7/X7plus玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X7/X7plus玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X7/X7plus原机玻璃镜面1片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X7/X7plus原机玻璃镜面2片', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X7/X7plus镜框+镜片【一套】', '森麥康 步步高ViVO X9S X9Plus X7 X6A D L后摄像头玻璃镜片镜面 镜头盖 X6/X6plus玻璃镜面1片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9/X9i/X9S高清玻璃镜面1片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9/X9i/X9S高清玻璃镜面2片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9/X9i/X9S金色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9/X9i/X9S粉色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9/X9i/X9S黑色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9plus高清玻璃镜面1片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9plus高清玻璃镜面2片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9plus金色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9plus粉色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9plus黑色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9Splus高清玻璃镜面1片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9Splus高清玻璃镜面2片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9Splus金色镜框+镜片', '森麥康 步步高ViVO X9 X9S X9Plus摄像头玻璃镜片 后置照相机镜头盖 镜面 X9Splus粉色镜框+镜片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5玻璃镜面1片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5玻璃镜面2片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5A玻璃镜面1片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5A玻璃镜面2片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5A玻璃镜面1片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5A玻璃镜面2片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5plus玻璃镜面1片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米5plus玻璃镜面2片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5玻璃镜面1片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5玻璃镜面2片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5金色镜框+镜片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5粉色镜框+镜片', '森麥康 小米红米5 Note5A 5plus手机摄像头镜片 镜头盖 后置照相玻璃镜面 红米Note5黑色镜框+镜片', '森麥康 魅族魅蓝E 手机摄像头镜片M1E 镜头盖 A680Q后置照相玻璃镜面保护摄像头镜片 魅蓝E 玻璃镜面1片'], 'type_info': '手机通讯--手机配件--拍照配件'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
+2019-01-24 12:15:28 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-01-24 12:15:28 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-01-24 12:15:29 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2019-01-24 12:15:31 [scrapy.core.scraper] ERROR: Error processing {'data': {'title_list': ['【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光金【送防爆膜】 iPhon7plus7/7splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送防爆膜】 iPhone6/6s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送防爆膜】 iPhone6plus/6splus', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送防爆膜】 iPhone7/7s', '【新品★特价】苹果6/6s来电闪手机壳iPhone7/7s/6plus/7plus防摔透明手机壳发光 透光黄【送防爆膜】 iPhon7plus7/7splus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 苹果6/6S', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 苹果7/8', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 苹果6plus/6splus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 苹果7plus/8plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 oppo R9', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 OPPO R9plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 oppoA57', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 oppoA59/A59s/A59m', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 VIVO X9/X9s', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 VIVO X9Plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 vivo Y66', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 VIVO X20plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 VIVO X21前置', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 VIVO X21后指纹', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 OPPO R15标准版', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 其他型号请联系客服下单', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y 玻璃壳定制 OPPOA77', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 苹果7plus/8plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 苹果X', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 OPPO R11plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 OPPO R9plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 oppoA57', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 oppoA59/A59s/A59m', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO X9/X9s', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO X9Plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO X7', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 vivo Y66', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO Y67', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO x20', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO X20plus', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 VIVO X21前置', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 OPPO R15标准版', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 oppo r15梦境版', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 其他型号请联系客服下单', '【新品★特价】oppoR9s手机壳定制r11照片7苹果6s保护套a57/y67vivoy66玻璃壳y (磨砂壳)黑框白底 OPPOA77', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂蓝 7plus/8plus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂蓝 iPhone X', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 玫瑰金 苹果6/6S-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 玫瑰金 6plus/6splus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 玫瑰金 iPhone X', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂黄 苹果6/6S-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂黄 6plus/6splus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂黄 苹果7/8-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂黄 7plus/8plus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 磨砂黄 iPhone X', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮红色 苹果6/6S-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮红色 7plus/8plus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮黑色 苹果6/6S-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮黑色 6plus/6splus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮黑色 苹果7/8-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 亮黑色 iPhone X', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 色 苹果6/6S-4.7寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 色 6plus/6splus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 色 7plus/8plus-5.5寸', '【新品★特价】苹果678plus手机壳红色6s磨砂硬壳iphoneX新款8P防摔套6p男女 色 iPhone X'], 'type_info': '手机通讯--手机配件--手机饰品'}, 'name': 'jd'}
+Traceback (most recent call last):
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 66, in process_item
+    JD(item.get("data"), self.mysql)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/pipelines.py", line 104, in JD
+    mysql.add(title_list[i], '0', type_info)
+  File "/Users/liuyi/Desktop/服创/爬虫/ScrapyDemo/mySpider/mySpider/Mysql.py", line 16, in add
+    ret = self.cur.execute(self.sql, [title, price, type_info])
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/liuyi/.virtualenvs/fc/lib/python3.6/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+pymysql.err.InterfaceError: (0, '')
