@@ -7,7 +7,7 @@ class Mysql:
 
     def __init__(self):
 
-       self.conn = pymysql.connect(host='139.199.222.121', port=3306, database='fc', user='root', password='mysql123',
+       self.conn = pymysql.connect(host='127.0.0.1', port=3306, database='fc', user='root', password='mysql',
                                charset='utf8')
 
        self.cur = self.conn.cursor()
