@@ -22,7 +22,7 @@ jdcal==1.4
 jieba==0.39
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
-lxml==4.3.0
+lxml==4.6.5
 Markdown==3.0.1
 numpy==1.16.0
 openpyxl==2.5.12
