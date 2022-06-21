@@ -24,7 +24,7 @@ Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 lxml==4.3.0
 Markdown==3.0.1
-numpy==1.16.0
+numpy==1.22.0
 openpyxl==2.5.12
 parsel==1.5.1
 protobuf==3.6.1
